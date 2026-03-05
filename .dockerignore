@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+
+# Environment variables
+.env
+
+# Tests
+tests/
+*.http
+
+# Git
+.git/
+.gitignore
+
+# Database files
+*.db
+
+# Docker files
+Dockerfile
+compose.yaml
+.dockerignore
+
+# Miscellaneous
+test.py
