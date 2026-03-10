@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from endpoints.v1 import V1
+import endpoints.v1 as v1
 
 app = FastAPI()
 
@@ -10,4 +10,4 @@ async def test(word: str):
     return {"message": word+"!"}
 
 
-app.include_router(V1)
+app.include_router(v1.V1)

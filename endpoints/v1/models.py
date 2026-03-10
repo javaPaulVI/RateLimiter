@@ -2,13 +2,26 @@ from pydantic import BaseModel
 from typing_extensions import Literal
 
 
+class CheckUserRequest(BaseModel):
+    user_id: str
+
+class CheckUserResponse(BaseModel):
+    allowed: bool
+    remaining: int
+    retry_after: float
+    limit: int
+    time_period: str
+    strategy: str
+
+
 class RegisterAppRequest(BaseModel):
     name: str
 
 class RegisterAppResponse(BaseModel):
     app_id: str
     name: str
-    api_key: str
+    admin_api_key: str
+    live_api_key: str
     message: str
 
 
