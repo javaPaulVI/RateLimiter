@@ -1,6 +1,7 @@
 import secrets
 import uuid
 from typing import Union
+from core.dependencies import *
 
 from fastapi import APIRouter, Header, HTTPException, status, Depends
 from endpoints.v1.models import *
